@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "NJU GPA Calculator",
+  "description": "使用浏览器登录南京大学教务处网站后，点击右上角的插件图标，即可计算GPA",
+  "version": "2.0",
+
+  "permissions": ["tabs", "notifications", "https://jw.nju.edu.cn/*", "http://jw.nju.edu.cn/*", "http://elite.nju.edu.cn/jiaowu/*", "https://elite.nju.edu.cn/jiaowu/*"], 
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons":{
+    "16": "images/icon.jpg",
+		"48": "images/icon.jpg",
+		"128": "images/icon.jpg"
+  },
+  "content_security_policy": "script-src 'self' https://cdn.staticfile.org; object-src 'self'"
+}

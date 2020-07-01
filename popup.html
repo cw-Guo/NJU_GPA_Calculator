@@ -1,0 +1,88 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GPA计算器</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.staticfile.org/bootstrap-table/1.13.5/bootstrap-table.min.css" rel="stylesheet">
+    
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.staticfile.org/bootstrap-table/1.13.5/bootstrap-table.min.js"/>
+
+    <script src="https://cdn.staticfile.org/bootstrap-table/1.13.5/locale/bootstrap-table-zh-CN.min.js"></script>
+    
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+           
+      .table>tbody>tr>td {
+        border: 0px;
+        text-align: center;
+      }
+            
+      .bootstrap-table .table thead>tr>th {
+        text-align: center;
+      }
+            
+      .table thead {
+        background: #ebeaea;
+      }
+
+    </style>
+
+    
+  </head>
+
+  <body>
+    <div id="toolbar">
+
+    </div>
+    <div id="toolbar0">
+
+    </div>
+
+    <div id="toolbar1">
+           
+    </div>
+    
+    <div id="toolbar2">
+           
+    </div>
+
+    <div id="toolbar3">
+           
+    </div>
+
+    <div id="toolbar4">
+           
+    </div>
+
+    <table id="grade-table" class="table table-hover"></table>
+  </body>
+  <script src="popup.js"></script> 
+</html>
+
