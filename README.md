@@ -7,11 +7,9 @@
 ![截图](/images/screenshot.png)
 
 ## 其他说明
-- 本拓展程序的原开发者为：@
+本拓展程序的原开发者为：@[waterxjw](https://github.com/waterxjw/NJU-GPA-Calculator)
 
-  [waterxjw]: https://github.com/waterxjw/NJU-GPA-Calculator
-
-  @cwGuo在其基础上作二次开发
+@cwGuo在其基础上作二次开发
 
   - 增加了wes 算法
   - 修复了不能计算有关重修，退选的相关GPA 的bug
