@@ -43,12 +43,16 @@ function getTermGrade(termCode) {
                         else{
                             var reg1 = /[\u65e0\u6548]/; //无效
                             var reg2 = /[\u91cd\u4fee]/; //重修
+                            var reg4 = /[\u8865\u8003]/; //补考
                             if (reg1.test(content)){
                                 classData["credit"] = 0;
                                 classData["name"] = classData["name"] + "(无效)"
                                 content = 0;
                             }
                             else if (reg2.test(content)){
+                                content = content.replace(/[^0-9]/ig,"");;
+                            }
+                            else if (reg4.test(content)){
                                 content = content.replace(/[^0-9]/ig,"");;
                             }
                         }
